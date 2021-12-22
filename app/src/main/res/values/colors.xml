@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="color_primary">#FF3700B3</color>
+    <color name="color_status_bar">#FF3700B3</color>
+    <color name="color_background">#FFFFFFFF</color>
+    <color name="color_box_background">#F6F8F9</color>
+    <color name="color_text_primary">#9C9E9E</color>
+    <color name="color_text_error">#F44336</color>
+    <color name="color_text_secondary">#FFFFFFFF</color>
+    <color name="color_purpule">#805FB5</color>
+    <color name="color_black_text">#FF000000</color>
+    <color name="color_gray">#808080</color>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="color_progress_bar">#805FB5</color>
+    <color name="color_circle">#2D3156</color>
+    <color name="color_purpule_light">#E0D9EA</color>
+    <color name="color_background_card">#FFFFFFFF</color>
+    <color name="colorDisabled">#D1C7E1</color>
+    <color name="colorEnabled">#805FB5</color>
+    <color name="color_grey_light">#dddddd</color>
+    <color name="color_text_logout">#1C2939</color>
+    <color name="color_dark_purpule">#805FB5</color>
+    <color name="color_purple_white">#CDCEE7</color>
+    <color name="color_background_dialog">#FFFFFFFF</color>
+    <color name="color_gray_view">#c0c0c0</color>
+</resources>

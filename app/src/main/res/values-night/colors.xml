@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_status_bar">#FF000000</color>
+    <color name="color_background">#FFFFFFFF</color>
+    <color name="color_box_background">#F6F8F9</color>
+    <color name="color_text_primary">#9C9E9E</color>
+    <color name="color_text_error">#F44336</color>
+    <color name="color_text_secondary">#FF000000</color>
+    <color name="color_purpule">#805FB5</color>
+    <color name="color_black_text">#FF000000</color>
+    <color name="color_gray">#808080</color>
+    <color name="color_white">#FFFFFFFF</color>
+    <color name="color_background_card">#50555d</color>
+    <color name="colorDisabled">#CCCCCC</color>
+    <color name="colorEnabled">#805FB5</color>
+    <color name="color_grey_light">#dddddd</color>
+    <color name="color_text_logout">#1C2939</color>
+    <color name="color_dark_purpule">#805FB5</color>
+    <color name="color_purple_white">#CDCEE7</color>
+    <color name="color_background_dialog">#1D2733</color>
+    <color name="color_gray_view">#A3A0A0</color>
+</resources>

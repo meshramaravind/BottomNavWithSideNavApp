@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.arvind.bottomnavwithsidenav.view.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.arvind.bottomnavwithsidenav.view.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.arvind.bottomnavwithsidenav.view.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.arvind.bottomnavwithsidenav.view.welcome.WelcomeFragment"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_SignInFragment"
+            app:destination="@id/SignInFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_SignUpFragment"
+            app:destination="@id/SignUpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SignInFragment"
+        android:name="com.arvind.bottomnavwithsidenav.view.login.LoginFragment"
+        android:label="Log in"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_SignInFragment_to_otpFragment"
+            app:destination="@id/otpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+        <action
+            android:id="@+id/action_SignInFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.arvind.bottomnavwithsidenav.view.otpverification.OTPVerificationFragment"
+        android:label="OTP verification"
+        tools:layout="@layout/fragment_otp_verification">
+
+        <action
+            android:id="@+id/action_otpFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.arvind.bottomnavwithsidenav.view.signup.SignUpFragment"
+        android:label="Sign up"
+        tools:layout="@layout/fragment_sign_up">
+
+        <action
+            android:id="@+id/action_SignUpFragment_to_otpFragment"
+            app:destination="@id/otpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+</navigation>

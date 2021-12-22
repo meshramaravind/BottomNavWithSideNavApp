@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_160sdp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_40sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_profile_nav_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Arvind Meshram"
+            android:textColor="@color/color_black_text"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toStartOf="@+id/card_profile_nav_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_profile_nav_view"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/color_status_bar"
+            app:cardCornerRadius="@dimen/_40sdp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_profile_nav_view"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_margin="0dp"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@color/color_circle"
+                android:contentDescription="@string/text_profile"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_circle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_first_letter_profile_nav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:text="AM"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_email_profile_nav_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:gravity="start"
+            android:text="arvind@gmail.com"
+            android:textColor="@color/color_black_text"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toStartOf="@+id/card_profile_nav_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_profile_nav_view">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_contact_number_profile_nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/open_sans_regular"
+            android:gravity="start"
+            android:text="9292929292"
+            android:textColor="@color/color_black_text"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email_profile_nav_view">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/color_grey_light">
+
+    </View>
+
+</LinearLayout>

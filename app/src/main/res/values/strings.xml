@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">BottomNavWithSideNav</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="text_sign_in_to_continue">Log in</string>
+    <string name="text_join_with_new_account">Sign up</string>
+    <string name="text_sign_up">Sign up</string>
+    <string name="text_first_name">First Name</string>
+    <string name="text_last_name">Last Name</string>
+    <string name="text_email">Email</string>
+    <string name="text_email_or_phone_number">Email or Phone Number</string>
+
+    //error
+    <string name="text_hint_please_enter_your_e_mail_or_phone_number">Please enter your E-mail or Phone number</string>
+    <string name="text_hint_please_enter_your_password">Please enter your Password!</string>
+    <string name="text_error_please_enter_your_first_name">Please enter your First Name!</string>
+    <string name="text_error_please_enter_your_last_name">Please enter your Last Name!</string>
+    <string name="text_please_enter_your_email">Please enter your Email!</string>
+    <string name="text_please_enter_your_contact_number">Please enter your Contact Number!</string>
+
+
+    <string name="text_log_in">Log In</string>
+    <string name="text_contact">Contact</string>
+    <string name="text_password">Password</string>
+    <string name="text_please_enter_your_password">Please enter your Password!</string>
+    <string name="text_i_have_accepted_the_terms_of_use_and_privacy_policy">I have accepted the Terms of Use and Privacy Policy</string>
+    <string name="text_continue">Continue</string>
+    <string name="text_verification">Verification</string>
+    <string name="text_sign_in">Log in</string>
+    <string name="text_forgot_password">Forgot Password?</string>
+    <string name="text_save_changes">Save changes</string>
+    <string name="text_forgot_password_two">Forgot Password</string>
+    <string name="text_we_will_send_you_the_4_digit_verification_code">We will send you the 4 digit verification code.</string>
+    <string name="text_reset_password">Reset password</string>
+    <string name="text_confirm_password">Confirm Password</string>
+    <string name="text_resend">Resend</string>
+    <string name="text_verify">Verify</string>
+
+    <string name="text_menu_home_cart">Cart Mode</string>
+    <string name="text_ui_mode">UI Mode</string>
+
+    //side navigation drawer
+    <string name="menu_title_my_profile">My Profile</string>
+    <string name="menu_title_order_history">Order History</string>
+    <string name="menu_title_logout">Logout</string>
+
+    //bottom navigation
+    <string name="menu_title_home">Home</string>
+    <string name="menu_title_dashboard">Dashboard</string>
+    <string name="menu_title_notifications">Notifications</string>
+    <string name="menu_title_invite_a_friend">Invite a Friend</string>
+    <string name="text_profile">Profile</string>
+    <string name="text_course_title">course title</string>
+    <string name="text_new_password">New Password</string>
+    <string name="text_hide_and_show_password">hide and show password</string>
+    <string name="text_please_enter_otp">Please enter OTP</string>
+    <string name="text_please_enter_your_new_password">Please enter your new password</string>
+    <string name="text_please_enter_your_confirm_password">Please enter your confirm password</string>
+    <string name="text_slider_image_url">Slider Image Url</string>
+
+    <string name="logout">Logout</string>
+    <string name="logout_ok">LOGOUT</string>
+    <string name="cancel">Cancel</string>
+    <string name="would_you_like_to_logout">Would you like to logout?</string>
+    <string name="menu_title_about_us">About Us</string>
+    <string name="text_change_photo">Change Photo</string>
+    <string name="text_add_profile_picture">Add Profile picture</string>
+    <string name="text_camera">Camera</string>
+    <string name="text_gallery">Gallery</string>
+    <string name="menu_title_help">Help</string>
+    <string name="menu_title_dark_theme">Dark Theme</string>
+    <string name="text_retry">Retry</string>
+    <string name="text_duration_placeholder">Duration: %s</string>
+    <string name="text_login">Login</string>
+    <string name="menu_title_settings">Settings</string>
+
+
+</resources>

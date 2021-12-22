@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/my_profileFragment"
+        android:icon="@drawable/ic_baseline_person_outline_24"
+        android:title="@string/menu_title_my_profile" />
+
+
+    <item
+        android:id="@+id/action_invite_friends_mode"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="@string/menu_title_invite_a_friend" />
+
+    <item
+        android:id="@+id/help_Fragment"
+        android:icon="@drawable/ic_baseline_help_24"
+        android:title="@string/menu_title_help" />
+
+    <item
+        android:id="@+id/about_usFragment"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="@string/menu_title_about_us" />
+
+    <item
+        android:id="@+id/setting_Fragment"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/menu_title_settings" />
+    <item
+        android:id="@+id/logoutFragment"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:title="@string/menu_title_logout" />
+</menu>

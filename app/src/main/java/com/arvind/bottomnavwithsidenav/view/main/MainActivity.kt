@@ -64,13 +64,13 @@ class MainActivity : AppCompatActivity() {
                 R.id.welcomeFragment -> {
                     supportActionBar!!.setDisplayShowTitleEnabled(false)
                     hideBothNavigation()
-                    hideToolbarNavigation()
                 }
 
                 R.id.SignInFragment -> {
                     supportActionBar!!.setDisplayShowTitleEnabled(true)
                     hideBothNavigation()
                     showToolbarNavigation()
+
                 }
 
                 R.id.SignUpFragment -> {
@@ -93,11 +93,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
         binding.navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
-                R.id.my_profileFragment -> {
-
+                R.id.profileFragment -> {
+                    binding.drawerLayout.closeDrawers()
+                    navController.navigate(R.id.profileFragment)
                     true
                 }
 
@@ -105,15 +105,21 @@ class MainActivity : AppCompatActivity() {
                     shareMode()
                     true
                 }
-                R.id.help_Fragment -> {
+                R.id.helpFragment -> {
+                    binding.drawerLayout.closeDrawers()
+                    navController.navigate(R.id.helpFragment)
                     true
                 }
 
-                R.id.about_usFragment -> {
+                R.id.aboutUsFragment -> {
+                    binding.drawerLayout.closeDrawers()
+                    navController.navigate(R.id.aboutUsFragment)
                     true
                 }
 
-                R.id.setting_Fragment -> {
+                R.id.settingsFragment -> {
+                    binding.drawerLayout.closeDrawers()
+                    navController.navigate(R.id.settingsFragment)
                     true
                 }
                 R.id.logoutFragment -> {
@@ -126,7 +132,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
+        binding.bottomNavView.setupWithNavController(navController)
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.homeFragment,
@@ -139,31 +145,23 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun hideToolbarNavigation() {
-        binding.toolbar.visibility = View.GONE
-    }
-
     private fun showToolbarNavigation() {
         binding.toolbar.visibility = View.VISIBLE
     }
 
-
     private fun hideBothNavigation() {
         binding.bottomNavView.visibility = View.GONE
-        binding.navView.visibility = View.VISIBLE
         binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
-
-        binding.navView.setupWithNavController(navController)
         binding.toolbar.visibility = View.GONE
     }
 
     private fun showBothNavigation() {
         binding.toolbar.visibility = View.VISIBLE
         binding.bottomNavView.visibility = View.VISIBLE
-        binding.navView.visibility = View.VISIBLE
         binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
-        setupNavControl()
+
     }
+
 
     private fun setupNavControl() {
         binding.navView.setupWithNavController(navController)
@@ -210,7 +208,7 @@ class MainActivity : AppCompatActivity() {
                 this.resources.getString(R.string.logout_ok)
             )
             { dialog, which ->
-                binding.drawerLayout.closeDrawers();
+                binding.drawerLayout.closeDrawers()
                 navHostFragment.navController.navigate(R.id.SignInFragment)
             }.setNegativeButton(
                 this.resources.getString(R.string.cancel)

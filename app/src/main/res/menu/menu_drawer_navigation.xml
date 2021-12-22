@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/my_profileFragment"
+        android:id="@+id/profileFragment"
         android:icon="@drawable/ic_baseline_person_outline_24"
         android:title="@string/menu_title_my_profile" />
 
@@ -14,17 +14,17 @@
         android:title="@string/menu_title_invite_a_friend" />
 
     <item
-        android:id="@+id/help_Fragment"
+        android:id="@+id/helpFragment"
         android:icon="@drawable/ic_baseline_help_24"
         android:title="@string/menu_title_help" />
 
     <item
-        android:id="@+id/about_usFragment"
+        android:id="@+id/aboutUsFragment"
         android:icon="@drawable/ic_baseline_info_24"
         android:title="@string/menu_title_about_us" />
 
     <item
-        android:id="@+id/setting_Fragment"
+        android:id="@+id/settingsFragment"
         android:icon="@drawable/ic_baseline_settings_24"
         android:title="@string/menu_title_settings" />
     <item
